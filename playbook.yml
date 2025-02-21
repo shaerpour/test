@@ -3,6 +3,7 @@
   connection: local
   tasks:
     - name: Create test file
-      file:
-        path: /tmp/user.txt
+      copy:
+        content: ""
+        dest: /tmp/user.txt
         mode: "0644"
