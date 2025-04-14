@@ -1,0 +1,10 @@
+- name: test
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  become: true
+  tasks:
+    - name: test
+      copy:
+        content: "test cloud-init"
+        dest: "/root/test.txt"
